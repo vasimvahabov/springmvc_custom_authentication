@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/fontAwesome/css/all.css">
+  <title th:text="${PageTitle}"></title>
+</head>
+<body>
+
+  <!-- Fake Navigation -->
+  <nav class="fake-nav">
+    <ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Services</li>
+    <li>Contact</li>
+    </ul>
+  </nav>
+  <!-- Fake Navigation -->
+   
+  <!-- Login Button -->
+  <a id="login-btn" role="button" href="/" class="btn btn-sm">Back to Home</a>
+  <!-- Login Button -->
+
+  <!-- Card -->
+  <div id="login-card" class="card col-sm-3 px-0 alert alert-success border border-success">
+
+    <!-- Card body -->
+    <div class="card-body">
+      
+      <!-- Card Title -->
+      <div class="card-title text-center">
+        <i class="fa fa-check-square"></i> SUCCESS
+      </div>
+      <!-- Card Title -->
+
+      <hr>
+        
+      <!-- Display Messages -->
+      <p th:if="${success}!=null" class="card-text">
+        <b th:text="${success}"></b>
+      </p>
+      <!-- Display Messages -->
+
+      <!-- Card Text -->
+      <div class="card-text"> 
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. 
+      </div>
+      <!-- Card Text -->
+
+    </div>
+    <!-- Card body --> 
+    
+  </div>
+  <!-- Card -->
+
+</body>
+</html>

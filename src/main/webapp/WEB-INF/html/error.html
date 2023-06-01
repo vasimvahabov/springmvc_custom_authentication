@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/fontAwesome/css/all.css">
+  <title>Error</title>
+  <!-- <title th:text="${Page}"></title> -->
+</head>
+<body>
+
+  <!-- Fake Navigation -->
+  <nav class="fake-nav">
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+  <!-- Fake Navigation -->
+   
+  <!-- Login Button -->
+  <a id="login-btn" role="button" href="/" class="btn btn-sm">Back to Home</a>
+  <!-- Login Button -->
+
+  <!-- Card -->
+  <div id="login-card" class="card col-sm-3 px-0 alert alert-danger border border-danger">
+
+    <!-- Card body -->
+    <div class="card-body">
+      
+      <!-- Card Title -->
+      <div class="card-title text-center">
+        <i class="fa fa-window-close"></i> ERROR
+      </div>
+      <!-- Card Title -->
+
+      <hr>
+        
+      <!-- Display Messages -->
+      <p th:if="${notRegistered}!=null" class="card-text">
+        <b th:text="${notRegistered}"></b>
+        </p>
+      <!-- Display Messages -->
+        
+      <!-- Display Messages -->
+      <p th:if="${accountNotVerified}!=null" class="card-text">
+        <b th:text="${accountNotVerified}"></b>
+      </p>
+      <!-- Display Messages -->
+        
+      <!-- Display Messages -->
+      <p th:if="${verifyError}!=null" class="card-text">
+        <b th:text="${verifyError}"></b>
+      </p>
+      <!-- Display Messages -->
+       
+      <!-- Display Messages -->
+      <p th:if="${sessionExpired}!=null" class="card-text">
+        <b th:text="${sessionExpired}"></b>
+      </p>
+      <!-- Display Messages -->
+		
+      <!-- Display Messages -->
+      <p th:if="${loginError}!=null">
+        <b th:text="${loginError}"></b>
+      </p>  
+      <!-- Display Messages -->
+		
+      <!-- Display Messages -->
+      <p th:if="${RegistrationError}!=null" class="alert alert-danger text-center">
+        <b th:text="${RegistrationError}"></b>   
+      </p>
+      <!-- Display Messages -->
+        
+      <!-- Display Messages -->
+      <p th:if="${baseError}!=null" class="alert alert-danger text-center">
+        <b th:text="${baseError}"></b>   
+      </p>
+      <!-- Display Messages -->
+
+    </div>
+    <!-- Card body --> 
+
+  </div>
+  <!-- Card -->
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/fontAwesome/css/all.css">
+  <title th:text="${PageTitle}"></title>
+</head>
+<body>
+
+  <!-- Fake Navigation -->
+  <nav class="fake-nav">
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+  <!-- Fake Navigation -->
+
+
+  <!-- Login Button -->
+  <a id="login-btn" role="button" href="/login" class="btn btn-sm">Login</a>
+  <!-- Login Button -->
+
+
+  <!-- Fake Text Wrapper -->
+  <div class="fake-text-wrapper">
+    <h3 class="fake-company-name">Some Company Name</h3>
+    <h1>Company Slogan</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla delectus veniam sint ullam.
+      Neque magni commodi, porro reprehenderit voluptas cumque temporibus soluta enim rerum laudantium!
+    </p>
+    <button class="fake-description-btn btn btn-md">Learn More</button>
+  </div>
+  <!-- Fake Text Wrapper -->
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/fontAwesome/css/all.css">
+  <title th:text="${PageTitle}"></title>
+</head>
+<body>
+
+  <!-- Fake Navigation -->
+  <nav class="fake-nav">
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+  <!-- Fake Navigation -->
+   
+  <!-- Login Button -->
+  <a id="login-btn" role="button" href="/login" class="btn btn-sm">Back to Login</a>
+  <!-- Login Button -->
+
+  <!-- Card -->
+  <div id="login-card" class="card col-sm-4 px-0">
+
+    <!-- Card body -->
+    <div class="card-body">
+      
+        <!-- Card Title -->
+        <div class="card-title text-center">
+          <i class="fa fa-user"></i> ACCOUNT DE-ACTIVATED 
+        </div>
+        <!-- Card Title -->
+
+        <!-- Login form -->
+        <form action="/account_de_activated" method="post">
+
+          <!-- Card Text -->
+          <div class="card-text alert alert-warning border border-warning">
+            <ul>
+              <li>Your account has been de-activated</li>
+              <li>Please enter your registered email address in the form below</li>
+              <li>An email notification will be sent to the email provided below with instructions to activate account</li>
+              <li>Please review and proceed with instructions</li>
+            </ul>
+          </div>
+          <!-- Card Text -->
+
+          <!-- Form Group -->
+          <div class="form-group">
+            <label for="">Email</label>
+            <input type="email" class="form-control" name="email" placeholder="Please Enter Email...">
+          </div>
+          <!-- Form Group -->
+
+          <!-- Form Group -->
+            <div class="form-group">
+              <button class="submit-btn btn btn-md">Submit</button>
+            </div>
+          <!-- Form Group -->
+          
+        </form>
+        <!-- Login form -->
+
+    </div>
+    <!-- Card body -->
+
+    <!-- Card Footer -->
+    <div id="login-form-footer" class="card-footer text-center">
+      
+      <!-- Fake Disclaimer -->
+      <h5 class="card-text text-muted">
+        <b>Disclaimer</b>
+      </h5>
+      <!-- Fake Disclaimer -->
+
+      <!-- Fake Discription -->
+      <p class="card-text text-muted">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia odit libero itaque culpa perspiciatis aliquam.
+      </p>
+      <!-- Fake Discription -->
+
+    </div>
+    <!-- Card Footer -->
+
+  </div>
+  <!-- Card -->
+
+</body>
+</html>

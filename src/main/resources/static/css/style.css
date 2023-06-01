@@ -1,0 +1,47 @@
+*{
+  box-sizing: border-box;
+  font-family: Comfortaa;
+}
+
+/* Main body styling */
+body{
+  margin: 0px;
+  padding: 0px;
+  height:100vh;
+  background-color: #dfdfdf;
+}
+/* Main body styling */
+
+
+/* Main page header styling */
+header{
+  background-color: rgb(12, 17, 20);
+  padding: 7px 0px;
+}
+
+.main-nav{
+  /*border:1px solid white;*/
+  margin: 0px;
+}
+
+.main-nav li{
+  color: #8d8d8d;
+  display: inline-block;
+  margin-right: 7px;
+  font-size: 14px;
+}
+
+.username-display{
+  color:gray;
+}
+
+#search-form{
+  width: auto;
+  /*border:1px solid red;*/
+}
+
+.login-identifier{
+  font-size:12px;
+  margin: 0px 7px;
+}
+/* Main page header styling */
